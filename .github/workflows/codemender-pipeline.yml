@@ -223,8 +223,6 @@ jobs:
             #
             #   Do not add --unrestricted. project_paths already gave the agent
             #   this whole repository.
-            cm fix "$FID" FLAGS_GO_HERE 2>&1 | tee "$RUNNER_TEMP/fix-$FID.cm.log" || true
-
             # Safety net: if cm did not edit the files directly, recover the
             # patch from the log and apply it by hand.
             python3 .github/scripts/extract_cm_diff.py \
