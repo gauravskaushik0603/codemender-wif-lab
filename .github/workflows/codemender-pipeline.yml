@@ -39,7 +39,7 @@ permissions:
 env:
   SCAN_PATH: src/services
   CM_BUNDLED: lab/bin/cm-linux
-  CM_MODEL: gemini-3.8-flash-cyber.
+  CM_MODEL: gemini-3.8-flash-cyber
   CM_LIMIT: "1"
 
 jobs:
